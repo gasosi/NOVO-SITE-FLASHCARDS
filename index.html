@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitos e Verdades do Fundo do Mar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE ACESSIBILIDADE E MENU -->
+    <header class="cabecalho">
+        <div class="logo">
+            <svg class="icone-marinho" viewBox="0 0 24 24" fill="currentColor">
+                <!-- Ícone de Bicho Marinho (Peixe) -->
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+            <h1>Oceano Curioso</h1>
+        </div>
+
+        <nav class="menu-navegacao">
+            <a href="#inicio" class="cabecalho-link">Início</a>
+            <a href="#cards" class="cabecalho-link">Mitos e Verdades</a>
+            <a href="#video" class="cabecalho-link">Vídeo Explicação</a>
+        </nav>
+
+        <!-- BARRA DE ACESSIBILIDADE -->
+        <div class="acessibilidade-bar">
+            <button id="btn-fonte-aumentar" title="Aumentar Fonte">A+</button>
+            <button id="btn-fonte-diminuir" title="Diminuir Fonte">A-</button>
+            <button id="btn-tema" title="Alternar Tema Claro/Escuro">
+                <span id="icone-tema">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="hero">
+            <h2>Mergulhe nos Mitos e Verdades do Fundo do Mar</h2>
+            <p>Passe o mouse ou toque nos cartões para revelar o que é mito ou realidade.</p>
+        </section>
+
+        <!-- SEÇÃO DE CARDS -->
+        <section id="cards" class="secao-cartoes">
+
+            <!-- CARTÃO 1: PINGUIM -->
+            <article class="cartao">
+                <div class="cartao-interno"> 
+                    <div class="cartao-frente"> 
+                        <div class="card-header-icon">
+                            <svg class="icone-animal" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5zm-1 18.93A8.001 8.001 0 0 1 4 13c0-2.5 1.5-4.5 3-6.5C7 5 9 3 12 3s5 2 5 3.5c1.5 2 3 4 3 6.5a8.001 8.001 0 0 1-7 7.93V22h-2v-1.07z"/>
+                            </svg>
+                            <span class="tag-falso">MITO?</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1598439210625-5067c578f3f6?w=400" alt="Imagem de um pinguim" class="cartao-imagem">
+                        <p class="cartao-texto">Pinguins conseguem voar pelos céus como os outros pássaros!</p> 
+                    </div> 
+                    <div class="cartao-verso"> 
+                        <span class="tag-verdade">VERDADE</span>
+                        <p class="cartao-texto">Pinguins não voam no ar, mas são excelentes nadadores que "voam" dentro da água!</p> 
+                    </div> 
+                </div>
+            </article>
+
+            <!-- CARTÃO 2: FOCA -->
+            <article class="cartao">
+                <div class="cartao-interno"> 
+                    <div class="cartao-frente"> 
+                        <div class="card-header-icon">
+                            <svg class="icone-animal" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 12c0-3.87-3.13-7-7-7s-7 3.13-7 7c0 2.38 1.19 4.47 3 5.74V20c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74z"/>
+                            </svg>
+                            <span class="tag-falso">MITO?</span>
+                        </div>
+                        <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2025/08/18/592478920-shutterstock1058269100-1.jpg" alt="Imagem de uma foca" class="cartao-imagem">
+                        <p class="cartao-texto">As focas são parentes diretas e próximas das baleias!</p> 
+                    </div> 
+                    <div class="cartao-verso"> 
+                        <span class="tag-verdade">VERDADE</span>
+                        <p class="cartao-texto">Focas são mamíferos da família dos pinípedes (próximos aos ursos/canídeos), e não das baleias.</p> 
+                    </div> 
+                </div>
+            </article>
+
+            <!-- CARTÃO 3: CAVALO MARINHO -->
+            <article class="cartao">
+                <div class="cartao-interno"> 
+                    <div class="cartao-frente"> 
+                        <div class="card-header-icon">
+                            <svg class="icone-animal" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C9.24 2 7 4.24 7 7c0 2.21 1.44 4.08 3.42 4.72-.03.43-.07.86-.1 1.28C9.5 15.5 8 16.5 8 19c0 1.66 1.34 3 3 3s3-1.34 3-3c0-1.11-.6-2.08-1.5-2.59.33-1.41.87-2.9 1.5-4.41C15.22 10.87 17 8.64 17 6c0-2.21-2.24-4-5-4z"/>
+                            </svg>
+                            <span class="tag-falso">MITO?</span>
+                        </div>
+                        <img src="https://img.magnific.com/fotos-premium/dois-cavalos-marinhos-com-uma-forma-de-coracao-em-forma-de-coracao_1277187-31895.jpg?w=360" alt="Cavalos marinhos" class="cartao-imagem">
+                        <p class="cartao-texto">Cavalos-marinhos trocam de parceiro a todo momento.</p> 
+                    </div> 
+                    <div class="cartao-verso"> 
+                        <span class="tag-verdade">VERDADE</span>
+                        <p class="cartao-texto">A maioria das espécies é monogâmica, mantendo o mesmo parceiro por longos períodos.</p> 
+                    </div> 
+                </div>
+            </article>
+
+        </section>
+
+        <!-- VÍDEO EXPLICATIVO -->
+        <section id="video" class="secao-video">
+            <h2>Explore a Vida Marinha</h2>
+            <p>Assista ao vídeo abaixo para entender melhor o ecossistema dos oceanos:</p>
+            <div class="container-video">
+                <iframe 
+                    src="https://www.youtube.com/embed/2g811Ub79mA" 
+                    title="Vídeo Explicativo sobre Animais Marinhos" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto do Fundo do Mar — Desenvolvido por <strong>Mr.KPG 7</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
